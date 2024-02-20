@@ -1,7 +1,10 @@
-from flask import FLask,request,rendeer_template
-app = Flask(_name_）
-@app.route("/",method = ["GET","POST"]
+from flask import Flask,request,render_template
+
+app = Flask(__name__)
+
+@app.route("/",methods=["GET","POST"])
 def index():
   return(render_template("index.html"))
+
 if __name__ == "__main__":
-   app.run()
+  app.run()
